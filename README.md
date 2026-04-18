@@ -1,1 +1,1 @@
-This Project contains all Python code and datasets to run all code in the book, Applied Multivariate Statistics with Python. The book is availabe here. However, copying from a pdf changes the specing and carriage returns.
+This Project contains all Python code and datasets to run all code in the book, Applied Multivariate Statistics with Python. The book is availabe here. However, copying from a pdf changes the spacing and carriage returns.
