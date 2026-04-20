@@ -33,10 +33,10 @@ This repository is designed to:
 
 ## 📊 Topics Covered
 
-* Principal Component Analysis (PCA)
 * Factor Analysis
 * Cluster Analysis
 * Discriminant Analysis
+* Neural Networks for Forecasting Cross-sectional and Time-series Data
 * Other multivariate techniques
 
 ---
