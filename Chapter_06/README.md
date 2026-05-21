@@ -11,8 +11,6 @@ By completing this chapter, we will learn how to:
 * Estimate and interpret multiple regression models
 * Evaluate statistical assumptions in regression analysis
 * Detect and interpret multicollinearity and autocorrelation
-* Model trends and seasonality in time series data
-* Estimate autoregressive forecasting models
 * Interpret regression diagnostics and model performance
 * Connect econometric models to business and economic decision-making
 
@@ -22,8 +20,6 @@ This chapter connects econometric modeling to real-world business and economic a
 
 * Multiple Regression → Estimating relationships using several explanatory variables
 * Time Series Analysis → Understanding data observed across time
-* Trend Analysis → Modeling long-run growth or decline
-* Seasonality → Detecting repeating cyclical patterns
 * Autocorrelation → Measuring relationships across time periods
 * Forecasting → Predicting future outcomes using historical data
 * Regression Diagnostics → Evaluating whether model assumptions are satisfied
