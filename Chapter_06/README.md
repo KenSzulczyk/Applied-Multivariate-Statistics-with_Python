@@ -55,7 +55,6 @@ Using Python, we estimate:
 * regression coefficients,
 * standard errors,
 * t-tests,
-* confidence intervals,
 * and model fit statistics.
 
 The chapter emphasizes interpretation and economic meaning rather than simply estimating equations.
