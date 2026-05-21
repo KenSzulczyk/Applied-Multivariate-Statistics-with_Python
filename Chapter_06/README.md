@@ -1,6 +1,4 @@
-# 📘 Chapter 6: Advanced Regression and Time Series Analysis
-
-This chapter extends regression analysis into more realistic economic and business settings where relationships evolve over time, variables interact dynamically, and statistical assumptions become more important.
+# 📘 Chapter 6: Multiple Regression
 
 We move beyond simple regression and introduce tools commonly used in economics, finance, forecasting, and business analytics.
 
