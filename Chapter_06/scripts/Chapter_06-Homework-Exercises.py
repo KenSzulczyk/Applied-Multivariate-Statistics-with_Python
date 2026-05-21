@@ -13,9 +13,6 @@
 # 
 # Price = β0 + β1∙Size + β2∙Bedrooms + β3∙Age + ε
 # 
-
-# In[2]:
-
 # --------------------------------------------------
 # Multiple Regression Example: Housing Prices
 # --------------------------------------------------
@@ -74,9 +71,6 @@ print(model.summary())
 # 	The overall fit of the model
 # Whether the estimated relationship is consistent with a typical total cost function
 # 
-
-# In[3]:
-
 # --------------------------------------------------
 # Cubic Cost Function with Noise
 # Data Import, Visualization, and Estimation
@@ -152,4 +146,96 @@ model = sm.OLS(y, X).fit()
 print("\nRegression Results:")
 print(model.summary())
 
-# In[ ]:
+# Problem 3
+
+# A retail company wants to determine whether average weekly sales differ across three store locations: Urban, Suburban, and Rural.
+# The weekly sales data (in thousands of dollars) are shown below in the Python code.
+
+# --------------------------------------------------
+# Regression with Dummy Variables:
+# Store Location and Weekly Sales
+# --------------------------------------------------
+
+# Import libraries
+import pandas as pd
+import statsmodels.api as sm
+
+# --------------------------------------------------
+# STEP 1: Create the dataset manually
+# --------------------------------------------------
+
+data = {
+    
+    # Observation number
+    "Obs": list(range(1, 16)),
+    
+    # Store location
+    "Location": (
+        ["Urban"] * 5 +
+        ["Suburban"] * 5 +
+        ["Rural"] * 5
+    ),
+    
+    # Dummy variable D1
+    # D1 = 1 if Suburban, 0 otherwise
+    "D1_Suburban": [
+        0,0,0,0,0,
+        1,1,1,1,1,
+        0,0,0,0,0
+    ],
+    
+    # Dummy variable D2
+    # D2 = 1 if Rural, 0 otherwise
+    "D2_Rural": [
+        0,0,0,0,0,
+        0,0,0,0,0,
+        1,1,1,1,1
+    ],
+    
+    # Weekly sales (in thousands of dollars)
+    "Sales": [
+        82,88,91,85,90,      # Urban
+        74,71,76,79,73,      # Suburban
+        69,72,65,68,70       # Rural
+    ]
+}
+
+# Convert dictionary into a DataFrame
+df = pd.DataFrame(data)
+
+# Display dataset
+print("Dataset:")
+print(df)
+
+# --------------------------------------------------
+# STEP 2: Compute group means
+# --------------------------------------------------
+
+location_means = df.groupby("Location")["Sales"].mean()
+
+print("\nAverage Weekly Sales:")
+print(location_means)
+
+# --------------------------------------------------
+# STEP 3: Set up regression model
+# Sales = β0 + β1*D1 + β2*D2 + ε
+# --------------------------------------------------
+
+# Independent variables
+X = df[["D1_Suburban", "D2_Rural"]]
+
+# Add constant term (Urban is the baseline group)
+X = sm.add_constant(X)
+
+# Dependent variable
+y = df["Sales"]
+
+# --------------------------------------------------
+# STEP 4: Estimate regression model
+# --------------------------------------------------
+
+model = sm.OLS(y, X).fit()
+
+# Display regression results
+print("\nRegression Results:")
+print(model.summary())
