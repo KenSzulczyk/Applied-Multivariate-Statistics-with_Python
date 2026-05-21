@@ -111,6 +111,23 @@ We introduce:
 * training/testing datasets,
 * and confusion matrices.
 
+## 🧩 Cluster Analysis
+
+Cluster analysis identifies natural groupings in data when categories are unknown in advance.
+
+Unlike supervised learning methods, clustering allows the data to reveal its own structure.
+
+We introduce:
+
+* K-means clustering,
+* the Elbow Method,
+* silhouette scores,
+* and customer segmentation applications.
+
+The chapter emphasizes that:
+
+statistical results must be combined with interpretation and domain knowledge.
+
 ## 📊 Logistic Regression
 
 Logistic regression models binary outcomes such as:
@@ -129,24 +146,6 @@ We examine:
 * logit models,
 * classification accuracy,
 * and interpretation of coefficients.
-
-## 🧩 Cluster Analysis
-
-Cluster analysis identifies natural groupings in data when categories are unknown in advance.
-
-Unlike supervised learning methods, clustering allows the data to reveal its own structure.
-
-We introduce:
-
-* K-means clustering,
-* the Elbow Method,
-* silhouette scores,
-* and customer segmentation applications.
-
-The chapter emphasizes that:
-
-statistical results must be combined with interpretation and domain knowledge.
-
 ## 🤖 Connections to Machine Learning
 
 This chapter introduces several concepts central to modern machine learning and data science:
