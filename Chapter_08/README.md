@@ -208,7 +208,7 @@ By the end of this chapter, we should be able to:
 * Compare neural networks with traditional regression models
 * Apply RNN and LSTM models to sequential and time series data
 
-📚 Big Picture
+## 📚 Big Picture
 
 Neural networks are one of the most important technologies in modern artificial intelligence, machine learning, and predictive analytics.
 
